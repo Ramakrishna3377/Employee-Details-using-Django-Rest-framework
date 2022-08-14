@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff_details</title>
+</head>
+<body>
+    <table border="3px">
+        <tr>
+            <thead>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Date of birth</th>
+                <th> Gender</th>
+                <th>Phone number</th>
+                <th>Address</th>
+            </thead>
+        </tr>
+        {% for record in records %}
+        <tr>
+            <td>{{record.id}}</td>
+            <td>{{record.Name}}</td>
+            <td>{{record.Date_of_birth}}</td>
+            <td>{{record.gender}}</td>
+            <td>{{record.phone_number}}</td>
+            <td>{{record.address}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
